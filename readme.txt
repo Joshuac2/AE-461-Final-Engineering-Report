@@ -1,5 +1,5 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%       Tasks per member:     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%          Tasks per member:       %
 
 Nick:
 - Experiment 6: Problems 1-4
@@ -18,8 +18,8 @@ Edward:
 Viraj:
 - Experiment 1: Problems 9-12
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%       Remaining Tasks       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%          Remaining Tasks         %
 
 - Abstract
 - Theory and Analysis
