@@ -21,7 +21,8 @@
 - Experiment 6: Problems 5-8
 
 ## Viraj:
+- Theory and Analysis
 - Experiment 1: Problems 9-12
 
 # Remaining Tasks
-- Theory and Analysis
+- Finish Paper
