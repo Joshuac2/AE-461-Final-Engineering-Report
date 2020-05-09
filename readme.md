@@ -5,8 +5,9 @@
 ## Nick:                            
 - Experiment 6: Problems 1-4     
                               
-## Kevin:                           
-                              
+## Kevin:
+- Experiment 1: Problems 2,3,4,5 
+- Conclusions                               
                               
 ## Josh:                            
 - Introduction                   
@@ -25,5 +26,5 @@
 - Theory and Analysis            
 - Procedure                      
 - Experimental Uncertainty       
-- Experiment 1: Problems 2,3,4,5 
-- Conclusions    
+
+   
