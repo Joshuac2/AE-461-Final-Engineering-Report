@@ -12,7 +12,7 @@
 
 ## Josh:
 - Introduction
-- Apparatus
+- Apparatus (*DONE*)
 - Procedure
 - Experiment 1: Problem 1,6,7,8
 
