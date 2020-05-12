@@ -1,2 +1,33 @@
 % Obtain experimental values of elastic modulus, elastic limit, ultimate strength, and ultimate strain for each specimen using the strain from the digital extensometer and the DIC calculations.  Tabulate all data and present them in your write-up.
-N
+
+After the stress versus strain curves were completed, some mechanical properties of the composite could be deduced from the information within. It was deemed necessary to obtain values of the elastic modulus, $E_{1}$, elastic limit, ultimate tensile strength, and ultimate strain for all three composite layups using data from both the extensometer and DIC. The elastic modulus is equivalent to the slope of stress vs strain graph in the initial linear section, and this was done using both sets of data. The Elastic limit was found by plotting a linear line with a slope equal to $E_{1}$ with a $0.2\%$ strain offset. The intersection with the offset line and the original stress vs strain curve is the elastic limit of the material, although it should be noted that this method was not possible for the  $90\degree$ specimen shown in Fig \ref{fig:90lam} because it failed very close to $0.2\%$ strain so the lines would not have intersected.
+
+For this test, the value had to be estimated and was take at the point where the stress vs strain curve started to change slope. The ultimate strength of each test was taken as the ultimate stress value with the ultimate strain being the corresponding strain values. The results using both the DIC and extensometer can be seen in Table \ref{tab:ExpDIC} and Table \ref{tab:ExpExtendo} respectively. 
+
+\begin{table}[!h]
+    \centering
+    \caption{Experimental Composite Properties from DIC}
+    \begin{tabular}{|C{1in}|c|c|c|c|}\toprule
+        \multicolumn{5}{c}{\textbf{Composite Properties}} \\ \midrule
+        \textbf{Laminate\newline Orientation} & $\mathbf{E_{1}}$ & \textbf{Elastic Limit}& \textbf{Ultimate Tensile Strength}& \textbf{Ultimate Strain} \\ \hline\hline
+        $0\degree$ & 119.84 GPa & 0.433 GPa & 0.833 GPa & 0.00944 \\\hline
+        $45\degree$ & 10.9 GPa & 0.0732 GPa & 0.125 GPa & 0.101 \\\hline
+        $90\degree$ & 2.69 GPa & 0.0047 GPa & 0.0583 GPa & 0.00237 \\\bottomrule
+    \end{tabular}
+    \label{tab:ExpDIC}
+\end{table}
+
+\begin{table}[!h]
+    \centering
+    \caption{Experimental Composite Properties from Extensometer}
+    \begin{tabular}{|C{1in}|c|c|c|c|}\toprule
+        \multicolumn{5}{c}{\textbf{Composite Properties}} \\ \midrule
+        \textbf{Laminate\newline Orientation} & $\mathbf{E_{1}}$ & \textbf{Elastic Limit}& \textbf{Ultimate Tensile Strength}& \textbf{Ultimate Strain} \\ \hline\hline
+        $0\degree$ & 166 GPa & 0.836 GPa & 1.13 GPa & 0.00933 \\\hline
+        $45\degree$ & 18 GPa & 0.0645 GPa & 0.1386 GPa & 0.122 \\\hline
+        $90\degree$ & 2.59 GPa & 0.00483 GPa & 0.058 GPa & 0.00203 \\\bottomrule
+    \end{tabular}
+    \label{tab:ExpExtendo}
+\end{table}
+
+From this information, there is some deviation between the two methods of measurements. The main reason for this can be since the extensometer uses a physical connection to the specimen being tested, there is a chance some slippage occurred resulting in an inaccurate measurement of the displacement of the material. 

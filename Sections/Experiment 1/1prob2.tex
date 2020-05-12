@@ -1,1 +1,34 @@
 % Determine the average composite density before and after cure, along with the standard deviation.  What is the average uncured thickness of each composite ply?  What is the average cured thickness of each composite ply?  How does this compare to the specifications in Table 1.2 for this composite system (for the cured ply only)?
+
+Based on the dimensions and mass from Table \ref{tab:beforedimensions}, the densities of each specimen was tabulated in Table \ref{tab:beforedensity} assuming each specimen is a rectangular prism. The average densities and standard deviation for both uncured and cured specimens are shown as well. Table \ref{tab:ply_thickness} shows the thickness of each composite ply, where 16 plies were used to construct specimens a and b, and 8 plies were used for specimen c. This was compared to the datasheet provided from Table 1.2 in the lab manual \cite{labmanual}.
+
+\begin{table}[!h]
+    \centering
+    \caption{Composite Densities}
+    \begin{tabular}{|l||c|c|}\toprule
+        Specimen & Uncured Density & Cured Density \\ 
+        & (\textit{g / cm$^{3}$}) & (\textit{g / cm$^{3}$}) \\ \midrule
+        \textbf{(a)}: $[90\degree]_{16\text{T}}$  & 1.4739 & 1.5691 \\\hline
+        \textbf{(b)}: $[\pm45\degree_4]_{2\text{S}}$ & 1.4656  & 1.5667 \\\hline
+        \textbf{(c)}: $[0\degree]_{8\text{T}}$ & 1.4716 & 1.5726 \\\bottomrule
+        Average & 1.4703 & 1.5695 \\\hline
+        Standard Deviation & 0.0043 & 0.0030 \\\bottomrule
+    \end{tabular}
+    \label{tab:beforedensity}
+\end{table}
+
+\begin{table}[!h]
+    \centering
+    \caption{Ply Thickness}
+    \begin{tabular}{|l||c|c|c|}\toprule
+        Specimen & Uncured Thickness & Cured Thickness & Cured Thickness \\
+        & (\textit{mm}) & (\textit{mm}) & Datasheet (\textit{mm}) \\ \midrule
+        \textbf{(a)}: $[90\degree]_{16\text{T}}$  & 0.1647 & 0.1383 & 0.1524 \\\hline
+        \textbf{(b)}: $[\pm45\degree_4]_{2\text{S}}$ & 0.2162 & 0.1584 & 0.1524 \\\hline
+        \textbf{(c)}: $[0\degree]_{8\text{T}}$ & 0.2414 & 0.1936 & 0.1524 \\\bottomrule
+        Average & 0.2074 & 0.1634 & 0.1524 \\\bottomrule
+    \end{tabular}
+    \label{tab:ply_thickness}
+\end{table}
+
+The average cured densities for all specimens was 1.5695 g/cm$^{3}$. The datasheet predicts the average cured density for this composite should be approximately 1.53 g/cm$^{3}$. The percent difference between the experimental specimens and the datasheet density is 2.58\%, which is very similar. On the other hand, there appears to be a higher deviation between the datasheet and experimental ply thickness. The average experimental cured ply thickness was 0.1632 mm while the data sheet states the cured ply thickness is 0.1524 mm, or a 7.21\% difference. While this is fairly close to the data sheet, there are still possible explanations for this discrepancy. One possible source of this error could be manufacturing precision. Considering the specimens were constructed by hand with simple tools (scissors and rulers) and are not dimensionally exactly the same as its mold, it is likely these specimens are not constructed up to ideal specifications. For example, a varying amount of residual resin or voids could be in between each fiber, changing the distance between each ply, thus varying the ply thickness.   

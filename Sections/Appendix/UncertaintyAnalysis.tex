@@ -1,0 +1,29 @@
+To find the uncertainty, $U$, of the calculated variable, $f$, the following method of uncertainty propagation is used: 
+\begin{align}
+    U_{f} = \sqrt{(\frac{\delta f}{\delta x}U_{x})^{2} + (\frac{\delta f}{\delta x}U_{x})^{2}}
+\end{align} \\
+where $x$ and $y$ are variables present in the calculation of $f$. If $f$ is dependent on more variables, they are included in the equation identically to $x$ and $y$. \\
+
+ \normalsize
+ \begin{enumerate}
+     \item \textbf{Specimen Volume}
+     \vspace{-0.25in}
+        \begin{align*}
+        \text{Volume} &= \text{Length}*\text{Width}*\text{Thickness} \\
+        \text{Length} &= 0.1689 m \text{ Width} = 0.02337 m \text{ Thickness} = 0.001549 m \\
+        U_{V} &= \sqrt{(\frac{\delta V}{\delta l}U_{l})^{2} + (\frac{\delta V}{\delta w}U_{w})^{2}+(\frac{\delta V}{\delta t}U_{t})^{2}} \\
+        U_{V} &= \sqrt{(w*t*U_{l})^{2} + (t*l*U_{w})^{2} + (w*l*U_{t})^{2} } \\ 
+        U_{V} &= \sqrt{(w*t*0.00005)^{2} + (t*l*0.00000005)^{2} + (w*l*0.00000005)^{2} } \\ 
+        U_{V} &= 0.0018 \text{ m}^{3} \\ 
+        \end{align*}
+
+\item \textbf{Specimen Density}
+    \vspace{-0.25in}
+    \begin{align*}
+        \rho &= \frac{m}{V} \\ 
+        U_{\rho} &= \sqrt{(\frac{\delta \rho}{\delta m}U_{m})^{2} + (\frac{\delta \rho}{\delta V}U_{V})^{2}} \\
+        U_{\rho} &= \sqrt{(\frac{1}{V}U_{m})^{2} + (\frac{-m}{V^{2}}U_{V})^{2}} \\
+        U_{\rho} &= 8.065 e -9 \quad kg/m^{3}
+    \end{align*}
+
+\end{enumerate}

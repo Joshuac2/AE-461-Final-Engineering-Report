@@ -1,1 +1,23 @@
 % What is the total volumetric shrinkage of each composite specimen after cure?  How does this compare to the materials specification data?
+
+Based on the dimensions of the specimen before and after curing, the volumetric shrinkage was calculated with Equation \ref{eq:volume_shrinkage}. The $V_\text{uncured}$ and $V_\text{cured}$ terms represent the volume of the specimen, uncured and cured, respectively. The shrinkage values for each specimen is shown in Table \ref{tab:volume_shrinkage_tab}. 
+
+\begin{equation} \label{eq:volume_shrinkage}
+    \% \text{Shrinkage} = \frac{V_\text{uncured} - V_\text{cured}}{V_\text{cured}} * 100 \%
+\end{equation}
+
+
+\begin{table}[!h]
+    \centering
+    \caption{Volumetric Shrinkage}
+    \begin{tabular}{|l||c|c|c|}\toprule
+        Specimen & Uncured Volume & Cured Volume & Shrinkage \\ 
+        & (\textit{cm$^{3}$}) & (\textit{cm$^{3}$}) & (\%) \\ \midrule
+        \textbf{(a)}: $[90\degree]_{16\text{T}}$ & 11.65 & 8.74 & 33.28 \\\hline
+        \textbf{(b)}: $[\pm45\degree_4]_{2\text{S}}$ & 14.45 & 10.81 & 33.63 \\\hline
+        \textbf{(c)}: $[0\degree]_{8\text{T}}$ & 8.28 & 6.21 & 33.40 \\\bottomrule
+    \end{tabular}
+    \label{tab:volume_shrinkage_tab}
+\end{table}
+
+Based on the lab manual, from Table 1.2 in Appendix G, the volumetric shrinkage is expected to be 70\%. However, from Table \ref{tab:volume_shrinkage_tab}, the experimental shrinkage was only about 33\%. Again, this is likely due to poor manufacturing tolerances. This also lines up with the theory that there are more voids or excess resin left in the composite, thus increasing the specimens' final volume and decreasing its shrinkage percentages.

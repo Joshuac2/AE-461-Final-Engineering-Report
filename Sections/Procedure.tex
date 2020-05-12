@@ -38,6 +38,40 @@ Additional research into the use of a hot press for the curing process reveals s
 \clearpage
 \subsection{Process for Mechanical Property Testing of Composite Materials}
 \subsubsection{Specimen Geometry}
+Prior to testing the material in the Instron 4483 tension/compression machine, each of the three specimen must be measured.  The width and thickness are measured with digital calipers.  The dimensions provide the needed values to calculate the cross-sectional area.  It is possible to use the information provided in the lab manual, shown below in Table \ref{tab:prop}, combined with the cross-sectional area to calculate the theoretical predicted strength and expected failure load for the specimen.
 
+\begin{table}[!h]
+    \centering
+    \caption{Mechanical Properties of DA 409U/G35 150 prepreg and 8551-7A Resin \cite{labmanual}}
+    \begin{tabular}{|L{3.5in}|C{0.75in}|}\toprule
+        \multicolumn{2}{c}{\textbf{Mechanical Properties}} \\ \midrule
+        \textbf{Property} & \textbf{Value} \\ \hline\hline
+        Fiber Tensile Modulus & 235 GPa \\\hline
+        Fiber Shear Modulus & 14 GPa \\\hline
+        Fiber Poisson's Ratio & 0.20 \\\hline
+        Matrix Tensile Modulus & 2.5 GPa \\\hline
+        Matrix Shear Modulus & 1 GPa \\\hline
+        Matrix Poisson's Ratio & 0.25 \\\hline
+        Composite Longitudinal Modulus & 129.6 GPa \\\hline
+        Composite Longitudinal Tensile Strength & 1930 MPa \\\hline
+        Composite Longitudinal Compressive Strength & 1724 MPa \\\hline
+        Composite Transverse Tensile Strength & 40 MPa \\\hline
+        Composite Transverse Compressive Strength & 225 MPa \\\hline
+        Composite Shear Strength & 150 MPa \\ \bottomrule
+    \end{tabular}
+    \label{tab:prop}
+\end{table}
+
+\clearpage
 
 \subsubsection{Tension Test}
+With the after-cure dimensions and theoretical values known, a final visual inspection of the specimen is done.  A picture of the specimen may be seen in Figure \ref{fig:specpic}.  When the specimen and machinery are ready for testing, the specimen are inserted into the load frame grips.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.85\textwidth]{Pictures/specimens.jpg}
+    \caption{Post-Cure Specimen}
+    \label{fig:specpic}
+\end{figure}
+
+The yellow sections visible in the figure above provide a gripping section for the load frame.  With the specimen loaded into the machine, the extensometer is attached to the specimen with a gauge length of 1.0 inches.  Last, the camera and LED light source are set up and the Digital Image Correlation (DIC) software is run.  This will provide visual data which may later be combined with the load cell and extensometer for analysis.  As each specimen is tested, the load cell data, extensometer, and DIC software recorded data is saved and labelled.  When the specimen reaches its failure load and breaks, the specimen may then be removed and replaced with the next material.  The data is collected for all three specimen for later analysis.

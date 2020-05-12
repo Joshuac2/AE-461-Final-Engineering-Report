@@ -1,2 +1,35 @@
 % Compute all on-axis and off-axis composite properties using the micromechanics models found in equations (6.8)-(6.11), (6.23)(6.27), and (6.28)-(6.33).
-N
+\par To get an idea of how our specimens performed, the theoretical mechanical properties of the composite would need to be determined. These values are determined knowing information about what the composite is comprised of, including the mechanical properties of both the fibers and matrix, along with the volume fraction of each. This information was made available in the lab manual \cite{labmanual} and shown in Table \ref{tab:prop}. With this information the theoretical values could be computed using the rule of mixtures and equations \ref{eqn:eight}, \ref{eqn:nine}, and \ref{eqn:18} - \ref{eqn:22}.
+
+\begin{table}[!h]
+    \centering
+    \caption{On-axis Composite Properties}
+    \begin{tabular}{|L{1.5in}|C{1 in}|}\toprule
+        \multicolumn{2}{c}{\textbf{Composite Properties}} \\ \midrule
+        \textbf{Property} & \textbf{Value} \\ \hline\hline
+        $E_{x}$ & 130.374 GPa \\\hline
+        $\nu_{xy}$ & 0.2225 \\\hline
+        $E_{y}$ & 5.484 GPa \\\hline
+        $G_{xy}$ & 2.04 GPa \\\hline
+        $c$ & 1.002 \\\hline
+        $\overline{Q}_{11}$ & 130.647 GPa  \\\hline
+        $\overline{Q}_{22}$ & 5.495 GPa \\\hline
+        $\overline{Q}_{12}$ & 1.222 GPa \\\hline
+        $\overline{Q}_{66}$ & 2.043 GPa \\\bottomrule
+    \end{tabular}
+    \label{tab:comp}
+\end{table}
+\par Along with the on-axis properties, the theoretical off-axis properties must also be solved in order to get a full understanding of how the composite will behave when loaded. To do this, a transformation of the on-axis properties was done depending on the orientation of the layup, and since the specimens were transversely isotropic, the laminate off-axis stiffness matrix could be computed with the values shown in Table \ref{tab:off-axis}. 
+\begin{table}[!h]
+    \centering
+    \caption{Laminate Off-axis Composite Properties}
+    \begin{tabular}{|C{1in}|c|c|c|c|c|c|}\toprule
+        \multicolumn{6}{c}{\textbf{Composite Properties}} \\ \midrule
+        \textbf{Laminate\newline Orientation}& \textbf{$Q_{11}$} & \textbf{$Q_{22}$}& \textbf{$Q_{12}$}& \textbf{$Q_{66}$}& \textbf{$Q_{16}$}& \textbf{$Q_{26}$} \\ \hline\hline
+        $0\degree$ & 130.64 GPa & 5.495 GPa & 1.222 GPa & 2.043 GPa & 0 GPa & 0 GPa \\\hline
+        $45\degree$ & 36.69 GPa & 36.69 GPa & 32.60 GPa & 33.42 GPa & 31.28 GPa & 31.28 GPa \\\hline
+        $90\degree$ & 5.495 GPa & 130.64 GPa & 1.222 GPa & 2.043 GPa & 0 GPa & 0 GPa\\\bottomrule
+    \end{tabular}
+    \label{tab:off-axis}
+\end{table}
+

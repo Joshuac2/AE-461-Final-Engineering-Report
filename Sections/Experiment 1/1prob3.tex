@@ -1,1 +1,22 @@
 % Using the data in Table 1.2 and question (1), and assuming zero voids in the specimens, determine the fiber volume fraction for the composite before and after cure in each specimen.  How does the cured composite fiber volume fraction compare to the material specifications?  What are possible sources of error?
+
+The fiber volume fraction was calculated for all the specimens for both uncured and cured states. The equation used to calculated is shown in equation \ref{eq:volumefractioneq}. In this equation, $\rho$ is the density of the composite and $V_{f}$ is the volume fraction of the fibers. The $\rho_{f}$ and $\rho_{m}$ terms are the densities of the fiber and matrix, both of which are provided in Table 1.2 from the lab manual \cite{labmanual}. Using Equation \ref{eq:volumefractioneq} and inputting densities from Table \ref{tab:beforedensity} and the fiber and matrix densities, $V_{f}$ was solved for each specimen. This is tabulated in Table \ref{tab:volume_fractions}.
+
+\begin{equation}\label{eq:volumefractioneq}
+    \rho = (\rho_{f})(V_{f}) + (\rho_{m})(1-V_{f})
+\end{equation}
+
+\begin{table}[!h]
+    \centering
+    \caption{Volumetric Fractions}
+    \begin{tabular}{|l||c|c|c|c|}\toprule
+        Specimen & Uncured $V_{f}$ & Cured $V_{f}$ & Cured $V_{f}$ & Absolute Error  \\
+        & & & Datasheet & (\%) \\ \midrule
+        \textbf{(a)}: $[90\degree]_{16\text{T}}$ & 0.4772 & 0.6074 & 0.55 & 10.44 \\\hline
+        \textbf{(b)}: $[\pm45\degree_4]_{2\text{S}}$ & 0.4574 & 0.6039 & 0.55 & 9.80  \\\hline
+        \textbf{(c)}: $[0\degree]_{8\text{T}}$ & 0.4661 & 0.6125 & 0.55 & 11.36 \\\bottomrule
+    \end{tabular}
+    \label{tab:volume_fractions}
+\end{table}
+
+From Table \ref{tab:volume_fractions}, it is evident that the experimental cured $V_{f}$ values are marginally higher than the $V_{f}$ values from the data sheet, or approximately 10\% higher. The higher than expected $V_{f}$ could be due to the assumption that there are no voids or residual materials in the composite. This is highly unlikely due to the fact the composite constructed in lab is likely to contain defects, since again, it was constructed by hand. If the void volumetric fraction can be accounted for, it is likely the $V_{f}$ will drop.

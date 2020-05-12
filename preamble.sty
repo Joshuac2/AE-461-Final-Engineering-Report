@@ -89,7 +89,30 @@
 \setlength{\headheight}{0.5in}
 \setlength\parindent{0.5in}
 
-%% setting up a new environment called alphasect which counts up appendix through arabic letters
+%% My colours
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+\definecolor{red}{RGB}{255,0,0}
+
+%% Defining the Section, Subsection, and Subsubsection formats:
+\RequirePackage[explicit]{titlesec}
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+\titleformat{\section}
+  {\large\bfseries\singlespacing}
+  {\thesection\space}{0pt}{#1}[]
+\titlespacing{\section}{0pt}{0.5\baselineskip}{0pt}
+\titleformat{\subsection}
+  {\normalsize\bfseries\singlespacing}
+  {\thesection\arabic{subsection}.\space}{0pt}{#1}[]
+\titlespacing{\subsection}{0pt}{0.5\baselineskip}{0pt}
+\titleformat{\subsubsection}
+  {\normalsize\itshape\singlespacing}
+  {\thesubsection.\arabic{subsubsection}.\space}{0pt}{#1}[]
+\titlespacing{\subsubsection}{0pt}{0.5\baselineskip}{0pt}
+
+%% (THIS MUST BE AT THE BOTTOM OF preamble.sty!) setting up a new environment called alphasect which counts up appendix through arabic letters
 \newcounter{alphasect}
 \def\alphainsection{0}
 
@@ -104,7 +127,7 @@
   \ifnum\alphainsection=1% 
     APPENDIX \Alph{alphasect}:%
   \else%
-    \arabic{section}\fi%
+    \arabic{section}.\fi%
 }%
 
 \newenvironment{alphasection}{%
@@ -118,26 +141,3 @@
   \setcounter{alphasect}{0}
   \def\alphainsection{0}
 }%
-
-%% My colours
-\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
-\definecolor{mylilas}{RGB}{170,55,241}
-\definecolor{red}{RGB}{255,0,0}
-
-%% Defining the Section, Subsection, and Subsubsection formats:
-\RequirePackage[explicit]{titlesec}
-\renewcommand{\thesection}{\arabic{section}}
-\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
-\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
-\titleformat{\section}
-  {\large\bfseries\singlespacing}
-  {\thesection.\space}{0pt}{#1}[]
-\titlespacing{\section}{0pt}{0.5\baselineskip}{0pt}
-\titleformat{\subsection}
-  {\normalsize\bfseries\singlespacing}
-  {\thesection.\arabic{subsection}.\space}{0pt}{#1}[]
-\titlespacing{\subsection}{0pt}{0.5\baselineskip}{0pt}
-\titleformat{\subsubsection}
-  {\normalsize\itshape\singlespacing}
-  {\thesubsection.\arabic{subsubsection}.\space}{0pt}{#1}[]
-\titlespacing{\subsubsection}{0pt}{0.5\baselineskip}{0pt}

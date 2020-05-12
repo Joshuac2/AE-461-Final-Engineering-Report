@@ -11,18 +11,19 @@
 - Conclusions 
 
 ## Josh:
-- Introduction
+- Introduction (*DONE*)
 - Apparatus (*DONE*)
-- Procedure
-- Experiment 1: Problem 1,6,7,8
+- Procedure (*DONE*)
+- Experiment 1: Problem 1,6,7,8 (*DONE*)
 
 ## Edward:
 - Experimental Uncertainty
 - Experiment 6: Problems 5-8
 
 ## Viraj:
-- Theory and Analysis
-- Experiment 1: Problems 9-12
+- Theory and Analysis (*DONE*)
+- Experiment 1: Problems 9-11 (*DONE*)
+- Experiment 1: Problem 12
 
 # Remaining Tasks
 - Finish Paper
